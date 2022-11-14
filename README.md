@@ -51,7 +51,7 @@ MazeGenerator generator = MazeGeneratorType.BACKTRACKING.getFactory().get();
 // Generate 20x20 2D maze
 Grid grid = generator.generate(20, 20);
 
-// Select an start and an end point
+// Select a start and an end point
 Cell start = grid.getCell(0, 0);
 Cell end = grid.getCell(19, 19);
 
