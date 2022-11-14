@@ -98,7 +98,7 @@ public class Grid {
     }
 
     public boolean isCellAvailableAt(int... position) {
-        return this.isCellMasked(position) && !this.isPositionOutOfBounds(position);
+        return !this.isPositionOutOfBounds(position) && this.isCellMasked(position);
     }
 
     public boolean isPositionOutOfBounds(int... position) {
