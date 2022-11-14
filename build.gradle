@@ -1,0 +1,6 @@
+plugins {
+    id 'java'
+}
+
+group 'de.evilcodez'
+version '1.0.0'
