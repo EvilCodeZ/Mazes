@@ -88,8 +88,8 @@ BufferedImage image = GridPrinter.toImage2D(grid, 20, 1);
 ### You can also convert the Grid into tile based data structures:
 ```java
 MazeGenerator generator = MazeGeneratorType.BACKTRACKING.getFactory().get();
-// Generate 15x10 2D maze
-Grid grid = generator.generate(15, 0);
+// Generate 10x10 2D maze
+Grid grid = generator.generate(10, 10);
 // Convert the grid
 boolean[][] tiles = TileExporter.export2D(grid, 1);
 ```
