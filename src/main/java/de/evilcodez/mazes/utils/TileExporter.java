@@ -55,7 +55,7 @@ public class TileExporter {
         for (int y = 0; y < grid.getSize(1); y++) {
             final byte[][] tilesXY = tiles[y];
             for (int x = offset; x < 1 + grid.getSize(0) * 2; x += 2) {
-                for (int z = offset; z < 1 + grid.getSize(1) * 2; z += 2) {
+                for (int z = offset; z < 1 + grid.getSize(2) * 2; z += 2) {
                     final Cell cell = grid.getCell((x - offset) / 2, y, (z - offset) / 2);
                     if(cell == null) continue;
                     final boolean up = cell.hasWall(1, 1);
